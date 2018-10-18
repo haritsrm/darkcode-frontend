@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #2ecc71;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.input{
+  width: 60px;
+  height: 60px;
+  background: none;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-sizing: border-box;
+  outline: none;
+  transition: width 0.4s ease-in-out,
+              border-radius 0.8s ease-in-out,
+              padding 0.2s;
+  transition-delay: 0.4s;
+  color: white;
+  font-size: 20px;
+}
+.inclicked{
+  width: 360px;
+  border-radius: 0;
+  padding: 0 15px;
+  padding-right: 40px;
+}
+.btn{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top:0;
+  right: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn::before{
+  content: "";
+  width: 4px;
+  height: 25px;
+  background: white;
+  position: absolute;
+  transform: rotate(-45deg);
+  bottom: -16px;
+  right: -6px;
+  transition: 0.3s;
+}
+.close::before,.close::after{
+  content: "";
+  width: 4px;
+  height: 34px;
+  background: white;
+  position: absolute;
+  bottom: 12px;
+  right: 28px;
+}
+.close::before{
+    transform: rotate(-45deg);
+}
+.close::after{
+    transform: rotate(45deg);
+}
